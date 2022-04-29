@@ -1,5 +1,11 @@
 function selectionSort(arr) {
-  // type your code here
+  let myArr = []
+  while(arr.length !== 0){
+    let min = Math.min(...arr)
+    myArr.push(min)
+    arr.splice(arr.indexOf(min),1)
+  }
+  return myArr
 }
 
 if (require.main === module) {
